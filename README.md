@@ -22,6 +22,6 @@ To update the firmware in the Little Monster:
   
 I have also included my version of the MKSTFT28 LCD firmware I've used to upgrade from (kinda had to as the old one was set for Smoothieware codes).  To Update the LCD: simply copy the files in the MKSTFT28 folder to an SD card, insert into LCD screen, and cycle power.
 
-I also have a separate project (hopefully to be uploaded in the near future) which I use to help parse and create my gcode files utilizing flashprint software.
+I also have a separate project (flashprint converter) which I use to help parse and create my gcode files utilizing flashprint software.
   
   
