@@ -11,6 +11,8 @@ There were a few portions of the standard Marlin code which I updated that there
   pins_MKS_SBASE.h (pin definitions did not match my MKS SBASE v1.3 board for some reason.  Don't know if this is something to do with a poor nock-off used or what.
   temperature.cpp (was having motherboard heating issues w/ the heat bed FETs, however there is a MB fan attached to the hotend fan, so changed to make those come on if the heated bed is on.)
   
+I have also included my version of the MKSTFT28 LCD firmware I've used to upgrade from (kinda had to as the old one was set for Smoothieware codes).  
+
 I also have a separate project (hopefully to be uploaded in the near future) which I use to help parse and create my gcode files utilizing flashprint software.
   
   
