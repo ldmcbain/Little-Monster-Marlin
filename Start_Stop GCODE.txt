@@ -1,0 +1,33 @@
+This is what I am currently using for my start/stop GCODE.  Update the temps, etc before using.
+
+
+;start gcode
+G90
+M82  ; extruder absolute mode
+M140 SBEDTEMP ; set bed temp
+M190 SBEDTEMP ; wait for bed temp
+M106 S255
+
+M280 S10.6 ; Set servo value for homing
+G28 ; home printer
+M280 S3; Set servo
+G1 Z50 F15000 ; Move to 50mm
+G30 Z1.18 ; Height Adjustment
+M280 S7 ; reset servo value
+G1 X0 Y0 Z100 ; lift nozzle
+M42
+
+M104 SNOZ1TEMP ; set extruder temp
+M109 SNOZ1TEMP ; wait for extruder temp
+
+G92 E0
+
+
+
+;end gcode
+G92 E0
+M104 S0 ; turn off temperature
+M140 S0 ; turn off heatbed
+G28 ; home axis
+M84 ; disable motors
+M107
